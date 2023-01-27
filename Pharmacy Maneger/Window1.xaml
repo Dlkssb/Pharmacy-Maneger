@@ -1,0 +1,44 @@
+﻿<Window x:Class="Pharmacy_Maneger.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pharmacy_Maneger"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="ادخال الدواء" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Height="75" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" ></Label>
+    <Grid Margin="2,30,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label  Content="اسم الشركة" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Grid.Column="1" Grid.Row="0"></Label>
+        <Label Content="اسم الدواء" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Grid.Column="1" Grid.Row="1"></Label>
+        <Label Content="السعر الاول" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Grid.Column="1" Grid.Row="2"></Label>
+        <Label Content="السعر الثاني" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Grid.Column="1" Grid.Row="3"></Label>
+        <Label Content="تاريخ الانتهاء " HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Grid.Column="1" Grid.Row="4"></Label>
+        <Label Content=" الكمية" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Grid.Column="1" Grid.Row="5"></Label>
+            <ComboBox   Name="CompanyName" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Width="350" Height="40">
+                
+            </ComboBox>
+        <TextBox Name="MadName" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Width="350" Height="40"></TextBox>
+        <TextBox Name="PriceOne" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Width="350" Height="40"></TextBox>
+        <TextBox Name="PriceTwo" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Width="350" Height="40"></TextBox>
+        <DatePicker Name="ExpDate" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Width="350" Height="40"></DatePicker>
+        <TextBox Name="Con" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Width="350" Height="40"></TextBox>
+    </Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Button Name="Add" Click="Add_Click" Width="100" Height="25"  Margin="2,5,5,5" Content="تحديث الدواء"></Button>
+            <Button  Name="Update" Click="Update_Click" Width="100" Height="25" Margin="2,5,5,5" Content="اضافة دواء"></Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
